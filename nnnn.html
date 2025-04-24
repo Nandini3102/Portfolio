@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandini Shah | UI/UX Designer & Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: #0d0d2b;
+      color: white;
+    }
+    header, section, footer {
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn {
+      background-color: white;
+      color: #0d0d2b;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .project {
+      background-color: #1a1a3b;
+      border-radius: 8px;
+      margin: 1.5rem auto;
+      padding: 1rem;
+      max-width: 800px;
+      text-align: left;
+      opacity: 0;
+      animation: slideIn 1s ease-out forwards;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .project h3 {
+      margin-top: 1rem;
+      color: #ffcc00;
+    }
+    .project p, .project ul {
+      margin: 0.5rem 0;
+    }
+    .project ul {
+      padding-left: 1.2rem;
+    }
+    .skills, .projects, .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .card {
+      background-color: #1a1a3b;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 200px;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    
+    form input, form textarea {
+      width: 80%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 4px;
+    }
+    footer {
+      font-size: 0.9rem;
+    }
+
+    /* Keyframes for structured animations */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 0.5rem;
+      }
+
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0.5rem 0;
+      }
+
+      form input, form textarea {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NANDINI SHAH</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h2>Hi, I'm Nandini</h2>
+    <p>UI/UX Designer & Web Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <img src="neweraaa.png" alt=" New Era of Sounds-Headphone Website" width="500" height="600">
+      <h3>Headphone Product Animation Website</h3>
+      <p><strong>Description:</strong>“New Era of Sounds” is a futuristic headphone website UI designed to showcase a variety of stylish headphones through animated transitions. The layout features a bold headline, minimal navigation, and a hero section where each product takes center stage.
+        When the user clicks the circular arrow button, a smooth animation reveals the next headphone model, keeping the experience engaging and modern. The gradient color palette creates a vibrant, tech-forward feel, while the clean UI ensures product focus and usability.</p>
+      <p><strong>Tools Used:</strong> Figma (UI Design + Prototyping), Gradient Backgrounds, Interactive Component Animations </p>
+      <p><strong>Key Skills:</strong> UI Design, Component Prototyping, Animation in Figma, Visual Hierarchy, Color Balance</p>
+      <p><strong>Highlights:</strong> This project highlights my ability to create product-focused UI designs with animated interactivity — perfect for modern e-commerce experiences.</p>
+    </div>
+    <div class="project">
+      <img src="MIINIMALIST MODERN FURNITURE 2.png" alt="Product Marketing Poster" />
+      <h3>Marketing Poster Design</h3>
+      <p><strong>Description:</strong>A minimalist, high-contrast poster designed to market modern furniture with a clean, Scandinavian feel. Featuring bold typography and a standout yellow armchair, the poster is visually compelling and made for digital ads or social media promotions.
+        The use of grid balance, negative space, and a strong CTA enhances readability and impact. </p>
+      <p><strong>Tools Used:</strong> Figma, Canva</p>
+      <p><strong>Key Skills:</strong> Visual Communication, Color Contrast, Poster Design, Advertising Strategy</p>
+      <p><strong>Highlights:</strong> Strong brand appeal, CTA visibility, and stylish product presentation.</p>
+    </div>
+
+    <div class="project">
+      <img src="🍱 Bento.png" alt="Yellow Bun Bento-Bento Animation UI" />
+      <h3>Bento Layout Animation</h3>
+      <p><strong>Description:</strong> “The Yellow Bun” is a bento-style layout concept created for a burger brand website. Inspired by Bento Box aesthetics, the design breaks down product highlights into interactive tiles — from deals to burger combos, each section uses bold black and yellow for a fun, fast-food vibe.
+        Each grid block is clickable and animated to offer an engaging browsing experience, ideal for younger audiences.</p>
+      <p><strong>Tools Used:</strong>Figma (Smart Animate), Canva</p>
+      <p><strong>Key Skills:</strong> Bento Grid UI, Animation Prototyping, Bold Branding, Interaction Design</p>
+      <p><strong>Highlights:</strong> Unique layout approach, dynamic visual rhythm, and consistent food theme.</p>
+    </div>
+
+    <div class="project">
+      <img src="thrill.png" alt="Food Delivery App(Work in Progress)" />
+      <h3>Food Delivery App (In Progress)</h3>
+      <p><strong>Description:</strong> “Grill Thrill” is an upcoming full-scale mobile app project aimed at revolutionizing food delivery experiences. The app will include a home dashboard, product filtering, cart/checkout process, live order tracking, user profiles, and feedback systems.
+        The design emphasizes clean card layouts, vibrant food visuals, and simple navigation. It’s being developed with user-centered design in mind — making sure ordering food is quick, smooth, and fun..</p>
+      <p><strong>Tools Used:</strong> Figma</p>
+      <p><strong>Key Skills:</strong> End-to-End App UI Design,UX Thinking,Feature Planning,Wireframing,App Design, Responsive Design</p>
+      <p><strong>Highlights:</strong> Full app architecture,practical Ux planning,Evolve Design Process ,Order placement, menu categories, and user interaction flow.</p>
+    </div>
+
+    <div class="project">
+      <img src="MacBook Pro 16_ - 5.png" alt="New Era of Sounds-Headphone Website UI" width="500" height="600" />
+      <h3>Headphone Website UI</h3>
+      <p><strong>Description:</strong> “New Era of Sounds” is a sleek product showcase site built to highlight stylish headphones in a futuristic layout. The hero section displays products in a carousel-like structure, where each click animates to the next model with a gradient glow background.
+        It reflects modern tech branding with a strong focus on user interactivity, minimal UI, and dynamic storytelling.</p>
+      <p><strong>Tools Used:</strong>Figma, Gradient Color Systems, Interactive Components </p>
+      <p><strong>Key Skills:</strong> Product UI Design, Animation in Figma, Interactive Prototyping, Aesthetic Balance</p>
+      <p><strong>Highlights:</strong> Smooth transition effects, modern vibe, strong focus on product visibility.</p>
+    </div>
+
+    <div class="project">
+      <img src="GLOW NEST.png" alt="Skincare Home UI" />
+      <h3>Skincare Brand Homepage UI</h3>
+      <p><strong>Description:</strong> A mobile-first design for GlowNest’s skincare platform. The homepage includes product categories like skin concern, brand, and price range — built with cards and tabs for a clean user flow. The soft peach-pink palette matches the brand’s soothing identity.
+        It’s optimized for users who shop based on ingredients and concerns, reflecting an intuitive and user-friendly layout.</p>
+      <p><strong>Tools Used:</strong> Figma</p>
+      <p><strong>Key Skills:</strong> Mobile UI Design, Filtering Systems, Soft Color Palette Usage, UX Strategy</p>
+      <p><strong>Highlights:</strong> User-friendly,user-centered design layout with clear CTAs and product sorting user,brand consistency,smooth mobile interactions.</p>
+    </div>
+
+    <div class="project">
+      <img src="scent.png" alt="Scent Landing Page" />
+      <h3>Scent Brand Landing Page</h3>
+      <p><strong>Description:</strong> “Scent Nest” is a sophisticated landing page designed for a premium perfume brand. The interface uses a warm, earthy aesthetic with detailed product visuals, inviting users to “unveil their signature scent.” The layout flows from hero imagery to featured products and customer testimonials, ensuring an immersive brand experience.
+        The page is structured to tell a story — from scent exploration to purchase, using minimal yet elegant UI choices.</p>
+      <p><strong>Tools Used:</strong> Figma</p>
+      <p><strong>Key Skills:</strong> UI Design, Branding, Visual Storytelling, Typography, Landing Page Structure</p>
+      <p><strong>Highlights:</strong> Premium product focus, consistent brand tone,High-end aesthetic and minimalistic layout.</p>
+    </div>
+  </section>
+  
+    <style>
+      
+      .about-container h1{
+        color:#fff;
+      }
+      .about-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: #0d0d2;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      .about-container h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+  
+      .about-container p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #fff;
+      }
+  
+      .project-list {
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+  
+      .project-list li {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+  
+      .highlight {
+        font-weight: bold;
+      }
+    </style>
+
+
+  
+    <section class="about-container">
+      <h1>About Me</h1>
+      <p>Hi, I’m <span class="highlight">Nandini Shah</span>, a passionate <span class="highlight">UI/UX Designer</span> and aspiring <span class="highlight">Web Developer</span> focused on creating clean, user-friendly digital experiences. I’m currently pursuing my <span class="highlight">BCA (Bachelor of Computer Applications)</span> at <span class="highlight">Shri M.D. Shah Mahila College of Arts and Commerce</span> (Graduating in 2026), where I’m building a strong foundation in both design and development.</p>
+  
+      <p>I specialize in designing interfaces in <span class="highlight">Figma</span>, with a growing portfolio that includes:</p>
+  
+      <ul class="project-list">
+        <li><strong>GlowNest</strong> – Skincare website UI</li>
+        <li><strong>ScentNest</strong> – Perfume brand landing page</li>
+        <li><strong>Grill Thrill</strong> – Full food delivery app UI</li>
+        <li><strong>The Yellow Bun</strong> – Burger brand interface</li>
+        <li><strong>New Era of Sounds</strong> – Headphone showcase website</li>
+      </ul>
+  
+      <p>With additional skills in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">Canva</span>, and <span class="highlight">Adobe Photoshop</span>, I’m also exploring front-end development to bring my designs to life on the web. My goal is to become a full-time UI/UX Designer and Web Developer, creating seamless, engaging experiences that users love.</p>
+  
+      <p><strong>Let’s design something amazing together!</strong></p>
+    </section>
+  
+  
+    <div class="skills">
+      <div class="card">Figma</div>
+      <div class="card">Canva</div>
+      <div class="card">Adobe Photoshop</div>
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+    </div>
+  </section>
+  </body>
+
+  <section id="contact">
+    <h2>Let's Work Together</h2>
+    <p>Feel free to reach out for projects, collaborations or just a hello!</p>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf3h_O96MfEsCv09_DEmk9Pfa-Grk7lOy7Ors9nNJeH-IsINA/formResponse" method="POST"style=">
+        <input type="Full Name" name="entry.625476091" value="John Doe">
+        <input type="Email" name="entry.18643214" value="johndoe@example.com">
+        <input type="Subject" name="entry.1516729339" value="Testing">
+        <input type="Message" name="entry.1981945467" value="This is a test">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div class="contact-info">
+      <p>Email: nandinishah2103@gmail.com</p>
+      <p>Location: Mumbai, India</p>
+      <p>Phone: 9321755373</p>
+      <p>LinkedIn: linkedin.com/company/faangpath</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nandini Shah. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+    // Trigger animations as sections appear in the viewport
+    document.addEventListener("DOMContentLoaded", function () {
+      const projects = document.querySelectorAll('.project, .card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = entry.target.classList.contains('project') ? 'slideIn 1s ease-out forwards' : 'fadeInUp 1s ease-out forwards';
+          }
+        });
+      }, { threshold: 0.5 });
+
+      projects.forEach(project => observer.observe(project));
+    });
+  </script>
+</body>
+</html>
